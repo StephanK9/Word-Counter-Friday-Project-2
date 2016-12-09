@@ -16,10 +16,10 @@ namespace WordCounter2.Objects
 
     public int CountRepeats()
     {
-      string[] searchForWords = _userInputString.Split(' ');
+      string[] searchForWords = _userInputString.ToLower().Split(' ');
       foreach(string word in searchForWords)
       {
-        if(_userInputWord == word)
+        if(_userInputWord == word.ToLower())
         {
           _wordsCounted += 1;
         }
