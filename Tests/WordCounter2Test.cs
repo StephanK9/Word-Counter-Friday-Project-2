@@ -12,5 +12,11 @@ namespace WordCounter2
       RepeatCounter testRepeatCounter = new RepeatCounter("snow", "snow");
       Assert.Equal(1, testRepeatCounter.CountRepeats());
     }
+    [Fact]
+    public void RepeatCounterTest2_RecognizeSame_False()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("snow", "portland");
+      Assert.Equal(0, testRepeatCounter.CountRepeats());
+    }
   }
 }
