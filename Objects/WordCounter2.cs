@@ -16,7 +16,12 @@ namespace WordCounter2.Objects
 
     public int CountRepeats()
     {
-      return 0;
+      if(_userInputWord == _userInputString)
+      {
+        _wordsCounted += 1;
+        return _wordsCounted;
+      }
+      return _wordsCounted;
     }
   }
 }
