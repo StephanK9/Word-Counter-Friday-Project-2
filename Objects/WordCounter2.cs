@@ -14,6 +14,22 @@ namespace WordCounter2.Objects
       _userInputString = userInputString;
     }
 
+    public string GetUserWord()
+    {
+      return _userInputWord;
+    }
+
+    public string GetUserString()
+    {
+      return _userInputString;
+    }
+
+    public int GetWordsCounted()
+    {
+      return _wordsCounted;
+    }
+
+
     public int CountRepeats()
     {
       string[] searchForWords = _userInputString.ToLower().Split(' ');
