@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/Content/CSS/bootstrap.css" type="tex/css">
+    <link rel="stylesheet" href="/Content/CSS/styles.css" type="text/css">
+    <title>Welcome to Word Counter!</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+    <h1>Welcome to Word Counter!</h1>
+    </div>
+    <form class="form-group" action="/wordcount" method="post">
+      <div class="form-group">
+        <label for="user-word"><p>Enter a word to search for:</p></label>
+        <input type="text" name="user-word" class="form-control" required>
+      </div>
+      <br><br>
+      <div class="form-group">
+        <label for="user-string"><p> Enter a sentence to see if and how many times your word appears!</p></label>
+        <input type = "text" name="user-string" class="form-control" required>
+      </div>
+      <br><br>
+      <button type="submit"><p1>Check and See!</p1></button>
+    </form>
+  </body>
+</html>
