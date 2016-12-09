@@ -24,5 +24,11 @@ namespace WordCounter2
       RepeatCounter testRepeatCounter = new RepeatCounter("snow", "lots of snow snow snow");
       Assert.Equal(3, testRepeatCounter.CountRepeats());
     }
+    [Fact]
+    public void RepeatCounterTest4_ToLowerCase_True()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("snow", "SnoW");
+      Assert.Equal(1, testRepeatCounter.CountRepeats());
+    }
   }
 }
